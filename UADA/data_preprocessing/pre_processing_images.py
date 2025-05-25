@@ -35,7 +35,7 @@ class Image_crop(object):
 
 
 def image_loader(Images_path, batch_size, resize_image=256, crop_image=224, trained=True, aligned_center=False):
-    # normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],std=[0.229, 0.224, 0.225])
+    
     normalize = transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
 
     if not trained:
